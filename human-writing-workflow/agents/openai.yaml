@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Writing Workflow"
+  short_description: "Natural prose with evidence and author voice preserved"
+  default_prompt: "Use $human-writing-workflow to revise this text naturally while preserving my meaning, citations and evidence strength."

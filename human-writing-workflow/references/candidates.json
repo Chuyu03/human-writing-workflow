@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "evidence_date": "2026-10-29",
+  "policy": {
+    "default_strategy": "package-original-workflow",
+    "refresh_mode": "on-demand",
+    "automatic_promotion": false,
+    "automatic_installation": false,
+    "automatic_registry_writes": false,
+    "ordinary_edit_requires_network": false,
+    "max_new_candidates_per_refresh": 3,
+    "max_challengers_per_trial_batch": 2,
+    "evidence_note": "Seed source reviews are not behavioral trial results or detector measurements."
+  },
+  "candidates": [
+    {
+      "id": "blader-humanizer",
+      "source_url": "https://github.com/blader/humanizer",
+      "instruction_url": "https://github.com/blader/humanizer/blob/main/SKILL.md",
+      "genres": ["general", "personal", "academic-with-calibration"],
+      "reviewed_metadata_version": "3.1.0",
+      "source_identifier": {"kind": "git-blob", "value": "19fc634208e8cc6ae55d4ff287152583216fd244"},
+      "license": {"spdx": "MIT", "verified": true, "url": "https://github.com/blader/humanizer/blob/main/LICENSE"},
+      "checked_on": "2026-10-29",
+      "state": "source_reviewed",
+      "behavioral_trial": null,
+      "strengths": ["Explicit factual preservation", "Author-sample calibration", "Context-sensitive treatment of writing patterns"],
+      "risks": ["Generic rules still need academic calibration", "Punctuation restrictions can be too rigid for some sources"]
+    },
+    {
+      "id": "anbeeld-writing",
+      "source_url": "https://github.com/Anbeeld/WRITING.md",
+      "instruction_url": "https://github.com/Anbeeld/WRITING.md/blob/main/skills/writing/SKILL.md",
+      "genres": ["academic", "technical", "general", "personal"],
+      "reviewed_metadata_version": "1.4.2",
+      "source_identifier": {"kind": "git-blob", "value": "0b8805a6f9b18d78555dd86c9c8675c3892ed3f6"},
+      "license": {"spdx": "MIT", "verified": true, "url": "https://github.com/Anbeeld/WRITING.md/blob/main/LICENSE"},
+      "checked_on": "2026-10-29",
+      "state": "source_reviewed",
+      "behavioral_trial": null,
+      "strengths": ["Clear task modes and edit-depth boundaries", "Detailed preservation and output-integrity checks"],
+      "risks": ["Direct upstream use requires mandatory reference files", "A broader workflow can add unnecessary overhead to short edits"]
+    },
+    {
+      "id": "ashgreat-humanizer",
+      "source_url": "https://github.com/ashgreat/humanizer",
+      "instruction_url": "https://github.com/ashgreat/humanizer/blob/main/SKILL.md",
+      "genres": ["academic"],
+      "reviewed_metadata_version": "3.0.0",
+      "source_identifier": {"kind": "git-blob", "value": "53f1028e8c59f3815f49d193d3843777be14b4c0"},
+      "license": {"spdx": "MIT", "verified": false, "url": "https://github.com/ashgreat/humanizer/blob/main/LICENSE"},
+      "checked_on": "2026-10-29",
+      "state": "source_reviewed",
+      "behavioral_trial": null,
+      "strengths": ["Explicit preservation of citations and defined terms", "Author reports a paired academic-paragraph corpus"],
+      "risks": ["Corpus and detector claims are author-reported, not independent validation", "Marketing and business prose may not transfer across academic disciplines", "Literal style prohibitions need context"]
+    },
+    {
+      "id": "hardikpandya-stop-slop",
+      "source_url": "https://github.com/hardikpandya/stop-slop",
+      "instruction_url": "https://github.com/hardikpandya/stop-slop/blob/main/SKILL.md",
+      "genres": ["general", "personal"],
+      "reviewed_metadata_version": null,
+      "source_identifier": {"kind": "git-blob", "value": "83f2032fde406e97492ec48ee05ebe46f6403109"},
+      "license": {"spdx": "MIT", "verified": false, "url": "https://github.com/hardikpandya/stop-slop/blob/main/LICENSE"},
+      "checked_on": "2026-10-29",
+      "state": "source_reviewed",
+      "behavioral_trial": null,
+      "strengths": ["Concise editing checklist"],
+      "risks": ["Universal adverb and passive-voice bans can damage academic meaning", "Internal style ratings do not establish external effectiveness"]
+    },
+    {
+      "id": "research-skills-humanizer",
+      "source_url": "https://github.com/neuromechanist/research-skills",
+      "instruction_url": "https://github.com/neuromechanist/research-skills/blob/main/plugins/manuscript/skills/humanizer/SKILL.md",
+      "genres": ["academic", "grant"],
+      "reviewed_metadata_version": "0.2.0",
+      "source_identifier": {"kind": "git-blob", "value": "19cceb5f048e5711041b5b93224a9a3ef0bccc1f"},
+      "license": {"spdx": "MIT", "verified": false, "url": "https://github.com/neuromechanist/research-skills/blob/main/plugins/manuscript/skills/humanizer/LICENSE"},
+      "checked_on": "2026-10-29",
+      "state": "source_reviewed",
+      "behavioral_trial": null,
+      "strengths": ["Explicit academic exceptions for Methods and Discussion"],
+      "risks": ["Older upstream basis", "Examples introduce details absent from the original input", "Skill-level license must be distinguished from the repository-level license"]
+    },
+    {
+      "id": "write-like-a-human",
+      "source_url": "https://github.com/thebpandey/write-like-a-human",
+      "instruction_url": null,
+      "genres": ["personal", "social"],
+      "reviewed_metadata_version": null,
+      "source_identifier": null,
+      "license": {"spdx": null, "verified": false, "url": null},
+      "checked_on": "2026-10-29",
+      "state": "discovered",
+      "behavioral_trial": null,
+      "strengths": ["Voice-profile mechanism is a discovery lead"],
+      "risks": ["Primary instructions and license need a complete review before adoption", "Social-writing defaults may not suit academic prose"]
+    }
+  ]
+}
